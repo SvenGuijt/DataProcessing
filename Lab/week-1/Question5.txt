@@ -1,0 +1,6 @@
+Answer to question 5:
+
+A branch is a separate environment where new ideas (code for example) can be tried out.
+When something is edited inside of a branch it does not affect the master branch. A 
+branch is thus helpful to try out some new things while it won’t be merged until it’s
+ready to be checked by any collaborators.
