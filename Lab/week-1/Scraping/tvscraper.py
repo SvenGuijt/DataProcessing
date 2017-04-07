@@ -30,7 +30,11 @@ def extract_tvseries(dom):
     # NOTE: FOR THIS EXERCISE YOU ARE ALLOWED (BUT NOT REQUIRED) TO IGNORE
     # UNICODE CHARACTERS AND SIMPLY LEAVE THEM OUT OF THE OUTPUT.
 
-    #titles[], runtimes[], genres[], ratings[], actors[]
+    titles = []
+    runtimes = []
+    genres = []
+    ratings = []
+    actors = []
 
     for item in dom.by_tag("div.lister-list")[:1]:
         data = item.by_tag("div.lister-item-content")[0]
@@ -66,7 +70,7 @@ def save_csv(f, tvseries):
     '''
     writer = csv.writer(f)
     writer.writerow(['Title', 'Rating', 'Genre', 'Actors', 'Runtime'])
-    for i in titles
+    for i in titles:
         writer.writerow([titles[i], ratings[i], genres[i], actors[i], runtimes[i]])
 
     # ADD SOME CODE OF YOURSELF HERE TO WRITE THE TV-SERIES TO DISK
