@@ -1,1 +1,0 @@
-{"February": 607, "March": 597, "August": 1143, "May": 463, "January": 1157, "June": 328, "September": 885, "Octobre": 327, "April": 209, "December": 419, "July": 916, "November": 1482}

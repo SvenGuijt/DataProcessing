@@ -14,7 +14,18 @@ def main():
 		# Read in csv file
 		datareader = csv.reader(csvfile, delimiter=",")
 
-		DataPerMonth = [["January",0], ["February",0], ["March",0], ["April",0], ["May",0], ["June",0], ["July",0], ["August",0], ["September",0], ["Octobre",0], ["November",0], ["December",0]]
+		DataPerMonth = [{"Month": "January", 	"Rain":0}, 
+						{"Month": "February", 	"Rain":0}, 
+						{"Month": "March", 		"Rain":0}, 
+						{"Month": "April", 		"Rain":0}, 
+						{"Month": "May", 		"Rain":0}, 
+						{"Month": "June", 		"Rain":0}, 
+						{"Month": "July", 		"Rain":0}, 
+						{"Month": "August", 	"Rain":0}, 
+						{"Month": "September", 	"Rain":0}, 
+						{"Month": "Octobre", 	"Rain":0}, 
+						{"Month": "November", 	"Rain":0}, 
+						{"Month": "December", 	"Rain":0}]
 
 		# Iterate over each row in datafile
 		for row in datareader:
@@ -23,21 +34,13 @@ def main():
 			row[1] = int(row[1])
 			if row[1] == -1:
 				row[1] = 0
-			print(row)
 
-			DataPerMonth[int(row[0][4:6])-1][1] += row[1]
+			# Read rain data into data array
+			DataPerMonth[int(row[0][4:6])-1]["Rain"] += row[1]
 
-
-		print(DataPerMonth)
-
-	Data = {}
-
-	for i in range(len(DataPerMonth)):
-		Data[DataPerMonth[i][0]] = DataPerMonth[i][1]
-	print(Data)
-
-	with open("JSONDATA.txt", 'w') as OutputFile:
-		json.dump(Data, OutputFile)
+	# Create json file and write data to it
+	with open("JSONDATA.json", 'w') as OutputFile:
+		json.dump(DataPerMonth, OutputFile)
 
 
 if __name__ == '__main__':
