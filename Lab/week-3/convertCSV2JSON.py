@@ -23,7 +23,7 @@ def main():
 						{"Month": "July", 		"Rain":0}, 
 						{"Month": "August", 	"Rain":0}, 
 						{"Month": "September", 	"Rain":0}, 
-						{"Month": "Octobre", 	"Rain":0}, 
+						{"Month": "October", 	"Rain":0}, 
 						{"Month": "November", 	"Rain":0}, 
 						{"Month": "December", 	"Rain":0}]
 
