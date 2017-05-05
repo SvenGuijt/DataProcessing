@@ -1,3 +1,6 @@
+// Sven Guijt, 10597751
+// Data Processing, Minor Programmeren, UvA
+
 var colors = ["#ccece6","#99d8c9","#66c2a4","#41ae76","#238b45","#005824"];
 
 
