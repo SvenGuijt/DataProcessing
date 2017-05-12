@@ -72,26 +72,31 @@ d3.json("JSONDATAweek5.json", type, function(error, data) {
       .attr("fill", "#000")
       .text("Humidity, %");
 
+// Create g elements with class humidity
   var humidity = g.selectAll(".humidity")
     .data(humidities)
     .enter().append("g")
       .attr("class", "humidity");
 
+// Draw path among humidity mean measures
   humidity.append("path")
       .attr("class", "line")
       .attr("d", function(d) { return line(d.humidMean); })
       .style("stroke", function(d) { return z(d.id); });
 
+// Draw path among humidity min measures
   humidity.append("path")
       .attr("class", "line")
       .attr("d", function(d) { return line(d.humidMin); })
       .style("stroke", function(d) { return z(d.id); });
 
+// Draw path among humidity max measures
   humidity.append("path")
       .attr("class", "line")
       .attr("d", function(d) { return line(d.humidMax); })
       .style("stroke", function(d) { return z(d.id); });
 
+// Set text for humidity elements
   humidity.append("text")
       .datum(function(d) { return {id: d.id, value: d.humidMean[d.humidMean.length - 1]}; })
       .attr("transform", function(d) { return "translate(" + x(d.humidMean.date) + "," + y(d.value.humidMean) + ")"; })
@@ -136,6 +141,7 @@ d3.json("JSONDATAweek5.json", type, function(error, data) {
         d3.select("#t" + d.date + "-" + d.humidMean + "-" + i).remove();
       }
 
+// Draw dots on data points and define mouse events and dragit events
   var dot = svg.append("g")
       .attr("class", "dots")
     .selectAll(".dot")
@@ -168,20 +174,20 @@ d3.json("JSONDATAweek5.json", type, function(error, data) {
           d.humidMean.text("");
           dot.style("opacity", 1);
         }
-  
         dragit.trajectory.remove(d, i);
       })
       .call(dragit.object.activate)
 
 });
 
-
+// Function for parsing data variables into right formats
 function type(d, _, columns) {
   d.date = parseTime(d.date);
   for (var i = 1, n = columns.length, c; i < n; ++i) d[c = columns[i]] = +d[c];
   return d;
 }
 
+// Update function for interactivity
 function update(v, duration) {
 	dragit.time.current = v || dragit.time.current;
 	displayYear(dragit.time.current)
