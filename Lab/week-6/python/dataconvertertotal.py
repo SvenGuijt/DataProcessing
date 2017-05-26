@@ -52,9 +52,9 @@ def main():
 				data[row[0]]["LifeSatis"] = row[10]
 				data[row[0]]["Safe"] = row[11]
 				data[row[0]]["HomRate"] = row[12]
-
+	print(data)
 	# Create json file and write data to it
-	with open("data_files/JSONdataWOMEN.json", 'w') as OutputFile:
+	with open("JSONdataWOMEN.json", 'w') as OutputFile:
 		json.dump(data, OutputFile)
 
 

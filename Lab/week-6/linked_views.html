@@ -3,16 +3,57 @@
     <head>
     	<title>My Linked Views</title>
         <meta charset="utf-8">
+        <script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
         <script src="node_modules/datamaps/dist/datamaps.world.min.js"></script>
-        <script src="http://d3js.org/queue.v1.min.js"></script>
+        <script src="https://d3js.org/d3-queue.v3.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+        <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
     </head>
     <body>
         <p>Sven Guijt, studentnummer 10597751</p>
 		<p>Bron: <a href="http://stats.oecd.org/Index.aspx?DataSetCode=BLI">OECD</a></p>
         <p>World map showing life expectancy per country in years, hover for more info.</p>
-        <div id="container" style="position: relative; width: 700px; height: 500px;"></div>
-        <script src="linked_views.js"></script>
+      <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dataset
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li><a href="#">data1</a></li>
+          <li><a href="#">data2</a></li>
+          <li><a href="#">data3</a></li>
+        </ul>
+      </div>
+        <div id="container" style="position: relative; width: 900px; height: 500px;"></div>
+    <style>
+
+        .bar {
+          fill: steelblue;
+        }
+
+        .bar:hover {
+          fill: brown;
+        }
+        
+        .axis text {
+          font: 12px sans-serif;
+        }
+
+        .axis path,
+        .axis line {
+          fill: none;
+          stroke: #000;
+          shape-rendering: crispEdges;
+        }
+
+        .x.axis path {
+          display: none;
+        }
+
+    </style>
+     <svg class="chart"></svg>
+        <script src="javascript/linked_views.js"></script>
     </body>
 </html>
