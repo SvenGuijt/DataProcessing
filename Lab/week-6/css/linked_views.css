@@ -1,22 +1,22 @@
-		.bar {
-		  fill: steelblue;
-		}
+        .bar {
+          fill: steelblue;
+        }
 
-		.bar:hover {
-		  fill: brown;
-		}
-		
-		.axis text {
-		  font: 90px sans-serif;
-		}
+        .bar:hover {
+          fill: brown;
+        }
+        
+        .axis text {
+          font: 12px sans-serif;
+        }
 
-		.axis path,
-		.axis line {
-		  fill: none;
-		  stroke: #000;
-		  shape-rendering: crispEdges;
-		}
+        .axis path,
+        .axis line {
+          fill: none;
+          stroke: #000;
+          shape-rendering: crispEdges;
+        }
 
-		.x.axis path {
-		  display: none;
-		}
+        .x.axis path {
+          display: none;
+        }

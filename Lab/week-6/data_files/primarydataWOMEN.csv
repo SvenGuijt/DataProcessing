@@ -1,39 +1,39 @@
-Code,Country,DWBF,EmpRate,pEarn,QOSN,YearsEdu,AirPol,WaterQ,SRHealth,LifeSatis,Safe,HomRate
-AUS,Australia,1.1,66,43661,94,19.3,6,95,85,7.3,48.1,0.6
-AUT,Austria,1,67,38586,92,17.4,15,94,67,7.1,76.6,0.4
-BEL,Belgium,2.1,58,45717,88,19.4,19,82,72,6.9,60.8,0.8
-CAN,Canada,0.2,69,42067,94,16.7,12,88,89,7.5,73.5,0.9
-CHL,Chile,9.4,52,18188,82,17.2,18,72,51,6.5,49.6,1
-CZE,Czech Republic,0.7,61,18720,93,17.8,17,86,58,6.6,61.3,0.8
-DNK,Denmark,0.5,70,45430,95,20.1,11,94,69,7.7,77.2,0.2
-EST,Estonia,7.2,66,18210,90,18.5,9,84,51,5.5,58.5,2.5
-FIN,Finland,0.6,68,35728,96,20.2,7,93,64,7.7,79.2,0.7
-FRA,France,0.5,61,35893,89,16.6,14,86,64,6.3,63.5,0.4
-DEU,Germany,0,69,38405,92,18,15,93,63,7.1,66.2,0.5
-GRC,Greece,0.5,41,24878,84,18.9,15,66,71,5.6,51.3,0.6
-HUN,Hungary,5.3,56,18591,85,17.5,16,75,53,5.3,44.4,0.9
-ISL,Iceland,0,80,48669,96,20.4,7,98,74,7.6,68,0
-IRL,Ireland,0.1,56,47629,96,18,8,83,81,6.8,69.2,0.2
-ISR,Israel,4.4,64,24787,87,16.3,26,65,78,7.1,61.8,0.7
-ITA,Italy,0.8,47,31519,89,17.1,18,67,62,5.8,52.8,0.4
-JPN,Japan,6.4,64,28060,94,15,16,85,34,6,61.6,0.2
-KOR,Korea,4.2,55,23948,79,16.7,29,78,32,6.2,61.5,1
-LVA,Latvia,14.7,64,19893,86,18.3,12,76,46,5.9,53.6,2.9
-LUX,Luxembourg,0.1,61,54653,92,15.2,15,82,70,6.6,65.3,0.3
-MEX,Mexico,4.2,44,12031,79,14.5,12,71,64,6.3,38.4,4.8
-NLD,Netherlands,0,68,42090,88,17.9,17,94,72,7.4,72.4,0.7
-NZL,New Zealand,0.3,69,41968,99,18.6,9,90,90,7.5,48.8,0.8
-NOR,Norway,0,73,45261,94,18.5,6,97,75,7.6,83.1,0.7
-POL,Poland,3.1,55,21489,89,18.6,17,76,55,6.2,61.5,0.6
-PRT,Portugal,1,60,22445,85,17.5,10,90,41,5.2,56.3,0.6
-SVK,Slovak Republic,1.3,54,18511,92,16.7,16,82,61,6.1,53.4,1
-SVN,Slovenia,0.6,60,30959,89,19,14,90,62,5.7,73.7,0.4
-ESP,Spain,0.1,52,34320,97,18,12,72,68,6.6,78.4,0.4
-SWE,Sweden,0,73,36372,91,20,7,95,79,7.3,66.1,0.5
-CHE,Switzerland,0,75,51638,94,17.3,17,98,78,7.5,83.1,0.4
-TUR,Turkey,7.6,30,14996,82,16.6,17,62,63,5.5,52.4,0.6
-GBR,United Kingdom,0.4,68,34604,94,17,11,86,74,6.5,75,0.1
-USA,United States,0.1,63,48448,92,17.6,11,82,87,6.9,62.6,2.2
-BRA,Brazil,6.7,56,9380,91,16,17,67,67,6.6,29.3,4.5
-RUS,Russia,14.4,65,23942,91,16.4,14,49,34,5.8,46.1,5
-ZAF,South Africa,20.5,37,5086,90,15.5,14,67,65,4.8,30.4,2.6
+Code,Country,LifeExp
+AUS,Australia,84.3
+AUT,Austria,83.8
+BEL,Belgium,83.2
+CAN,Canada,83.6
+CZE,Czech Republic,81.3
+DNK,Denmark,82.4
+FIN,Finland,84.1
+FRA,France,85.6
+DEU,Germany,83.2
+GRC,Greece,84
+HUN,Hungary,79.1
+ISL,Iceland,83.7
+IRL,Ireland,83.1
+ITA,Italy,85.2
+JPN,Japan,86.6
+KOR,Korea,85.1
+LUX,Luxembourg,83.9
+MEX,Mexico,77.4
+NLD,Netherlands,83.2
+NZL,New Zealand,83.2
+NOR,Norway,83.8
+POL,Poland,81.2
+PRT,Portugal,84
+SVK,Slovak Republic,80.1
+ESP,Spain,86.1
+SWE,Sweden,83.8
+CHE,Switzerland,85
+TUR,Turkey,79.4
+GBR,United Kingdom,82.9
+USA,United States,81.2
+BRA,Brazil,78.6
+CHL,Chile,81.4
+EST,Estonia,81.7
+ISR,Israel,83.9
+RUS,Russia,76.3
+SVN,Slovenia,83.6
+LVA,Latvia,78.9
+ZAF,South Africa,58.8

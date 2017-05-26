@@ -1,0 +1,6 @@
+Dear people! Welcome to my website. Here I show you the life expectancy of people around the world. I think it is interesting to look at factors other than only income or education that may influence life expectancy. Some of the factors I include in my visualization are air pollution, quality of supported networks, dwellings without basic facilities and life satisfaction. My data is collected from OECD. 
+
+In the world map above the life expectancy is shown for countries all over the world. Unfortunately not all countries possessed this data, therefore some countries are turned black on the world chart. When you hover over each country you see a tooltip appear showing more data about that country and when the country is clicked the bar chart is updated to show also more data. The variables DWBF and QOSN stand for ”Dwellings without basic facilities” and ”Quality of Support Network” respectively.
+For questions or comments feel free to email me: svenguijt@hotmail.com
+
+Enjoy!
